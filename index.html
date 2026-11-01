@@ -18,13 +18,13 @@
 @media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#25091d;--soft:#341029;--ink:#f6e4ec;--head:#F9D9E8;--card:#3b1632;--line:#5a2a4c;color-scheme:dark}}
 :root[data-theme=dark]{--bg:#25091d;--soft:#341029;--ink:#f6e4ec;--head:#F9D9E8;--card:#3b1632;--line:#5a2a4c;color-scheme:dark}
 *,*::before,*::after{box-sizing:inherit}
-html{scroll-behavior:smooth;scroll-padding-top:calc(76px + env(safe-area-inset-top,0px))}
-body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 "Nunito Sans",system-ui,sans-serif}
+html{scroll-behavior:smooth;scroll-padding-top:calc(104px + env(safe-area-inset-top,0px))}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 18px/1.6 "Nunito Sans",system-ui,sans-serif}
 body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:60}
 img{max-width:100%;display:block}
 h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;color:var(--head);line-height:1.1;margin:0 0 .5em;font-weight:700}
 h2{font-size:clamp(2rem,5vw,3rem)}h3{font-size:1.4rem}
-.sc{font-family:"Great Vibes","Brush Script MT",cursive;color:var(--pink);font-size:1.7rem;font-weight:400}
+.sc{font-family:"Great Vibes","Brush Script MT",cursive;color:var(--pink);font-size:2.4rem;font-weight:400;line-height:1.2}
 .wrap{width:min(1120px,92%);margin:auto}
 section{padding:clamp(56px,9vw,100px) 0}
 .alt{background:var(--soft)}
@@ -34,13 +34,14 @@ section{padding:clamp(56px,9vw,100px) 0}
 .btn.g{background:var(--gold);border-color:var(--gold);color:#3a1d00}
 :focus-visible{outline:3px solid var(--gold);outline-offset:3px}
 header{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:var(--bg);border-bottom:1px solid var(--line)}
-header .wrap{display:flex;align-items:center;gap:20px;height:68px}
+header .wrap{display:flex;align-items:center;gap:20px;height:96px}
 .brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--head);margin-right:auto}
-.brand svg{width:48px;height:48px}
-.brand span{font:700 1.4rem/1 "Cormorant Garamond",serif}.brand b{color:var(--pink)}
-.brand small{display:block;font:400 .95rem "Great Vibes",cursive;color:var(--gold)}
+.brand svg{width:78px;height:78px}
+.brand span{font:700 2.2rem/1 "Cormorant Garamond",serif}.brand b{color:var(--pink)}
+.brand small{display:block;margin-top:2px;font:400 1.6rem "Great Vibes",cursive;color:var(--gold)}
 nav{display:flex;gap:22px}nav a{color:var(--ink);text-decoration:none;font-size:.95rem;font-weight:600}nav a:hover{color:var(--pink)}
 @media(max-width:860px){nav{display:none}}
+@media(max-width:520px){header .wrap{height:84px;gap:10px}.brand svg{width:58px;height:58px}.brand span{font-size:1.7rem}.brand small{font-size:1.3rem}}
 .hero{background:radial-gradient(circle at 85% 15%,var(--rose),transparent 45%),linear-gradient(160deg,var(--bg),var(--champ) 140%);overflow:hidden;padding-top:clamp(40px,6vw,80px)}
 .hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center}
 @media(max-width:860px){.hero .wrap{grid-template-columns:1fr}}
@@ -95,7 +96,7 @@ form .r{display:grid;grid-template-columns:1fr 1fr;gap:14px}
 label{display:grid;gap:4px;font-weight:600;font-size:.92rem}
 input,select,textarea{font:inherit;padding:.75em .9em;border:1.5px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink)}
 footer{background:var(--wine);color:var(--champ);padding:48px 0 32px;text-align:center}
-footer a{color:var(--champ)}footer svg{width:90px;height:90px;margin:auto}
+footer a{color:var(--champ)}footer svg{width:170px;height:170px;margin:auto}
 footer .sc{color:var(--gold);font-size:2rem}
 .fab{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:55;display:flex;align-items:center;gap:8px;padding:.8em 1.2em;border-radius:999px;background:#25a244;color:#fff;font-weight:700;text-decoration:none;box-shadow:0 8px 24px rgba(0,0,0,.25)}
 .fab svg{width:24px;height:24px;fill:none;stroke:#fff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
@@ -119,7 +120,7 @@ footer .sc{color:var(--gold);font-size:2rem}
 
 <header><div class="wrap">
 <a class="brand" href="#topo" aria-label="Dani JM – Festas com Amor"><svg viewBox="0 0 200 200"><use href="#logo"/></svg><span>Dani <b>JM</b><small>Festas com Amor</small></span></a>
-<nav aria-label="Principal"><a href="#decoracoes">Decorações</a><a href="#inclui">O que inclui</a><a href="#cores">Cores</a><a href="#galeria">Veja aqui</a><a href="#contato">Contato</a></nav>
+<nav aria-label="Principal"><a href="#decoracoes">Decorações</a><a href="catalogo.html">Catálogo</a><a href="#inclui">O que inclui</a><a href="#cores">Cores</a><a href="#galeria">Veja aqui</a><a href="#contato">Contato</a></nav>
 <a class="btn" data-wa="Olá! Conheci a Dani JM pelo site e gostaria de solicitar um orçamento para decoração de festa.">Orçamento</a>
 </div></header>
 
@@ -147,6 +148,7 @@ footer .sc{color:var(--gold);font-size:2rem}
 <h2>Decorações que encantam!</h2>
 <div class="cards" id="decs"></div>
 <p class="note">Também fazemos princesas, esportes, 15 anos, chá revelação, chá de bebê e muito mais.</p>
+<p style="text-align:center;margin-top:20px"><a class="btn" href="catalogo.html">VER CATÁLOGO COMPLETO</a></p>
 </div></section>
 
 <section id="inclui"><div class="wrap">
